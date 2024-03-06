@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        # 함수 ()
+        - 함수를 호출
+        - 함수의 본문을 실행
+        */
+        // # 프로시저 형태의 함수 
+        const f =function() {
+            console.log(`안녕하세요+${x}`) 
+            console.log(`안녕하세요+${x}`) 
+            console.log(`안녕하세요+${x}`)
+            // 리턴 
+        }
+        const x=10
+        f() // 호출
+
+        /*
+        수학적 함수
+        f(x)= x+5
+        */
+        const e= function(x/*매개변수*/) {
+            return x +5
+        } // 리턴 '값'
+
+        console.log(e(1))
+        console.log(e(2))
+
+        //코드의 재사용 
+        const sum = function (limit) {
+            let output =0 
+            for (let i=1; i<= limit; i++)
+            {
+                output+=i
+            }
+            return output    
+        }
+        let limit =20
+        sum(20)
+    </script>
+</body>
+</html>

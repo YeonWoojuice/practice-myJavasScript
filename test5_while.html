@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1. 불 표현식 확인
+        2-1. true일때 - 본문을 실행하고 1번으로 돌아감
+        2-2. false일때 - 종료 
+        */
+       // while 조건식이 중요할때 ,  for 배열기반, 반복횟수 중요
+       let i=0
+       while (i<10) {
+        alert(`${i}번째 반복입니다.`)
+        i++
+       }
+       
+       // confirm에서 취소 >> false
+       while(confirm('계속 진행하시겠습니까?')) {
+        alert(`${i}번째 반복입니다.`)
+        i++
+       }
+
+    </script>
+</body>
+</html>

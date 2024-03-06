@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const multiplyAll= function (stnum,ednum) {
+        //     let multResult=1
+        //     if (stnum<=ednum) {
+        //         for (;stnum<=ednum;stnum++) {
+        //             multResult*=stnum
+        //         }
+        //     }
+        //     else {
+        //         for (;ednum<=stnum;ednum++) {
+        //             multResult*=ednum
+        //         }
+        //     }
+        //     return multResult
+        // }
+
+        // console.log(multiplyAll(1,2))
+        // console.log(multiplyAll(1,3))
+
+        const max = function f(...array) {
+            let output =array[0]
+            end= array.length
+            for (start=0;start<end;start++) {
+                if (output<=array[start]) {
+                    output=array[start]
+                }
+            }
+            return output
+        }
+        console.log(max(1,2,3,4))
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 28강 참고 
+        // 기본매개변수
+        // 가독성
+        const isLeapYear = function (연도=new Date().getFullYear()) { 
+            // 함수 옆 괄호 안에 기본 매개변수를 입력해주면된다. 
+            console.log(`구하고 있는 년도${연도}`)
+            return (연도 % 4 ==0)
+            && (연도 % 100 !== 0)
+            || (연도 % 400 === 0)
+        }
+        console.log(isLeapYear())
+        /*옛날 코드는 기본 매개변수에 = 을 넣는게 안됨 
+        그래서 if문이나 
+        삼항 조건 연산자를 사용했었음*/
+
+        
+
+        
+
+        
+    </script>
+</body>
+</html>

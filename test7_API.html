@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        API: application programming interface
+        에플리케이션 프로그램을 만들때의 약속
+
+        나머지 매개변수 (...매개변수) : 나머지 전달인자를 하나의 배열로 반환한다. 
+        */
+    //    const 함수 = function (a,b,...매개변수) {
+    //     console.log(a,b,매개변수) // 일반 매개변수가 있고 나머지 매개변수가 있다
+    //    }
+    //    함수 ()
+    //    함수 (1)
+    //    함수 (1,2)
+    //    함수 (1,2,3,4)
+    //    함수 (1,2,[3,4],5)
+       // 전개 연산자 : 함수를 호출함 : 함수(...배열)
+       const f =function(a,b,c) {
+        console.log(a,b,c)
+       }
+
+       const a=[1,2,3]
+       f(a[0],a[1],a[2]) // 갈라짐
+       f(...a) // 위의 코드와 같다
+       // ctrl + K + U 주석해제 
+       const arr1 = [1,2,3]
+       const arr2=[...arr1,4,5,6]
+       const arr3=[arr1,4,5,6]
+       console.log(arr2)
+       console.log(arr3)
+    </script>
+</body>
+</html>

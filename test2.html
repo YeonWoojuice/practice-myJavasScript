@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // ctrl / f 사용하기 
+        // if (불 표현식) >> 불 표현식을 최대한 줄이기
+        
+        `오전 10시 이전 -> "아침밥 먹을 시간입니다."
+        오전 10시 ~ 오후 4시 -> 점심밥 먹을 시간입니다. 
+        오후 4시 이후 -> 저녁밥먹을 시간입니다. `/*
+        const hours = (new Date()).getHours()
+        if (hours <10) {
+            alert("아침밥 먹을 시간입니다.")
+        }else if (10<=hours && hours<=16) {
+            alert("점심밥 먹을 시간입니다.")
+        }else {
+            alert("저녁밥 먹을 시간입니다.")
+        }*/
+
+        const month = (new Date()).getMonth()+1
+
+        // 봄 
+        if (3<= month && month <=5) {
+            alert("봄입니다.")
+        }
+        else if (6<= month && month <=8) {
+            alert("여름입니다.")
+        }
+        if (9<= month && month <=11) {
+            alert("가을입니다.")
+        }
+        if ((1<= month && month <=2)||(month===12)) {
+            alert("겨울입니다.")
+        }
+    </script>
+</body>
+</html>
